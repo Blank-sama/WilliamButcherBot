@@ -31,7 +31,6 @@ from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyromod import listen
-from Python_ARQ import ARQ
 from telegraph import Telegraph
 
 is_config = path.exists("config.py")
@@ -115,7 +114,7 @@ else:
 
 aiohttpsession = ClientSession()
 
-arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
+
 
 app = Client("wbb", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
 
